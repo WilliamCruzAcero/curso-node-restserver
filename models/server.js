@@ -5,7 +5,7 @@ class Server {
 
     constructor() {
         this.app = express();
-        this.PORT = process.env.PORT;
+        this.PORT = process.env.PORT || 8080;
         this.usuariosPath = '/api/usuarios';
         // middelweres
         this.middelweres();
